@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar.jsx";
 import Main from "./components/Main";
 import Meals from "./components/Meals";
 import Friedwonton from "./components/Friedwonton";
+import Reservation from "./components/Reservation";
 function App() {
   return (
     <div>
@@ -10,6 +11,7 @@ function App() {
       <Main />
       <Meals />
       <Friedwonton />
+      <Reservation />
     </div>
   );
 }
