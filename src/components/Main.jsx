@@ -13,7 +13,7 @@ const Main = () => {
   return (
     <div>
       <div style={mainStyle}>
-        <div className="absolute top-[10em] left-[56em]">
+        <div className="absolute md:top-[10em] right-[14em]">
           <p className="text-white">Try Out Our New Meal</p>
           <h2 className="text-red-700 text-4xl font-bold">DOUBLE</h2>
           <h2 className="text-yellow-800 text-4xl border-l-amber-400">NUKE</h2>

@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
-
+import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../Assets/TASTY GOOD-5.png";
 
 const Navbar = () => {
@@ -33,16 +33,21 @@ const Navbar = () => {
     },
   ];
 
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
   return (
-    <div className="flex justify-around p-[1em]">
+    <div className="flex justify-around items-center p-[1em]">
       <div>
         <img src={logo} alt="Logo" className="w-[6em] h-[2em]" />
       </div>
-
-      <div>
+      <div className="hidden md:flex gap-6">
         <ul className="flex gap-6">
           {navLinks.map(({ id, link, style }) => (
-            <li key={id}>
+            <li key={id} className="cursor-pointer">
               <Link to={link} style={link === "Order Now" ? style : {}}>
                 {link}
               </Link>
@@ -50,6 +55,30 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
+      <div className="md:hidden">
+        {isNavOpen ? (
+          <FaTimes onClick={toggleNav} className="text-2xl cursor-pointer" />
+        ) : (
+          <FaBars onClick={toggleNav} className="text-2xl cursor-pointer" />
+        )}
+      </div>
+      {isNavOpen && (
+        <div className="md:hidden absolute top-[3.5em] right-0 bg-white w-full text-center cursor-pointer">
+          <ul className="py-4">
+            {navLinks.map(({ id, link, style }) => (
+              <li key={id} className="py-2">
+                <Link
+                  to={link}
+                  onClick={toggleNav}
+                  style={link === "Order Now" ? style : {}}
+                >
+                  {link}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 };
