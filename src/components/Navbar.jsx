@@ -63,7 +63,7 @@ const Navbar = () => {
         )}
       </div>
       {isNavOpen && (
-        <div className="md:hidden absolute top-[3.5em] right-0 bg-white w-full text-center cursor-pointer">
+        <div className="md:hidden absolute top-[3.5em] right-0 bg-white w-full text-center cursor-pointer z-10">
           <ul className="py-4">
             {navLinks.map(({ id, link, style }) => (
               <li key={id} className="py-2">

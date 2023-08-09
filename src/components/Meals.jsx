@@ -41,7 +41,7 @@ const Meals = () => {
 
   return (
     <div className="m-3 p-2">
-      <h2 className="flex justify-center text-center text-red-600 text-2xl m-3">
+      <h2 className="flex justify-center text-center text-red-600 text-2xl m-3 flex-wrap lg:flex-nowrap">
         Our top five meals
       </h2>
       <p className="flex justify-center text-center m-3">
