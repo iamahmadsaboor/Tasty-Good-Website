@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-scroll";
+
 import logo from "../Assets/TASTY GOOD-5.png";
+
 const Navbar = () => {
   let navLinks = [
     {
@@ -22,19 +24,28 @@ const Navbar = () => {
     {
       id: 5,
       link: "Order Now",
+      style: {
+        background: "#F03153",
+        color: "white",
+        padding: "10px",
+        borderRadius: "1.2em",
+      },
     },
   ];
+
   return (
     <div className="flex justify-around p-[1em]">
       <div>
-        <img src={logo} alt="Logo" className="w-[6em] h-[2em] " />
+        <img src={logo} alt="Logo" className="w-[6em] h-[2em]" />
       </div>
 
       <div>
         <ul className="flex gap-6">
-          {navLinks.map(({ id, link }) => (
+          {navLinks.map(({ id, link, style }) => (
             <li key={id}>
-              <Link to={link}>{link}</Link>
+              <Link to={link} style={link === "Order Now" ? style : {}}>
+                {link}
+              </Link>
             </li>
           ))}
         </ul>

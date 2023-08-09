@@ -53,7 +53,7 @@ const Meals = () => {
             key={id}
             class="max-w-[15rem] rounded overflow-hidden shadow-lg w-[292px] h-[350px] "
           >
-            <img className="w-[292px] h-[243px]" src={src} alt="" />
+            <img className="w-[292px] h-[180px]" src={src} alt="" />
 
             <div class="px-4 py-4">
               <div class="font-bold text-[1rem] mb-2 flex justify-between">
