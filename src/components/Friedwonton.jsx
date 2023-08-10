@@ -1,11 +1,15 @@
 import React from "react";
 import friedWonton from "../Assets/friedwonton.png";
 const Friedwonton = () => {
+  const backgroundStyle = {
+    backgroundImage: `url(${friedWonton})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "70vh",
+  };
   return (
     <div>
-      <div>
-        <img src={friedWonton} alt="" />
-      </div>
+      <div style={backgroundStyle}></div>
       <div className="absolute left-8 top-[150em] md:top-[110em] pl-[2em] lg:top-[90em] xl:top-[72em]">
         <h3 className="text-xl md:text-6xl text-white ">Get Free</h3>
         <h1 className="text-xl md:text-5xl text-white ">Fried</h1>

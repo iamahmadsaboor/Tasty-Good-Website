@@ -40,14 +40,14 @@ const Meals = () => {
   ];
 
   return (
-    <div className="m-3 p-2">
-      <h2 className="flex justify-center text-center text-red-600 text-2xl m-3 flex-wrap lg:flex-nowrap">
+    <div className="m-3 p-2 ">
+      <h2 className="flex justify-center text-center text-red-600 text-2xl m-3  ">
         Our top five meals
       </h2>
       <p className="flex justify-center text-center m-3">
         Try our five best meals today.
       </p>
-      <div className="flex justify-center gap-6">
+      <div className="flex justify-center gap-6 flex-wrap ">
         {meals.map(({ id, title, src, price }) => (
           <div
             key={id}
