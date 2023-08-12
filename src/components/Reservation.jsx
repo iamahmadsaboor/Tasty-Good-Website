@@ -11,7 +11,7 @@ const Reservation = () => {
   return (
     <div>
       <div style={backgroundStyle}></div>
-      <div className="absolute md:top-[90em] right-[11em]">
+      <div className="absolute md:top-[90em] right-[11em] font-a">
         <h4 className="text-white text-2xl">Get Your</h4>
         <h1 className="text-white text-2xl">Reservations</h1>
         <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500  hover:border-transparent rounded-full ">
