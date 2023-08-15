@@ -1,5 +1,5 @@
 import "./App.css";
-// import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import Meals from "./components/Meals";
 import Friedwonton from "./components/Friedwonton";
@@ -13,15 +13,7 @@ function App() {
   // }
   return (
     <div>
-      {/* <Navbar /> */}
-      {/* <head>
-        <title>My Site</title>
-        <link
-          rel="shortcut icon"
-          href="../public/favicon.ico"
-          type="image/x-icon"
-        />
-      </head> */}
+      <Navbar />
       <Main />
       <Meals />
       <Friedwonton />
