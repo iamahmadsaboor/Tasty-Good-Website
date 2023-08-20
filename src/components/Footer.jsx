@@ -39,12 +39,12 @@ const Footer = () => {
   ];
 
   return (
-    <div className="bg-red-500">
-      <div className="flex md:flex justify-around pt-[3em]">
+    <div className="bg-red-500 h-[95vh] md:h-[45vh] text-mono">
+      <div className="flex md:flex justify-around pt-[3em] flex-wrap md:flex-nowrap">
         <img className="h-[48px] w-[93px]" src={whitelogo} alt="" />
-        <div className="flex">
+        <div className="flex pt-4 md:pt-0">
           {icons.map(({ id, src, href }) => (
-            <div id={id} className="flex pl-[0.2em]">
+            <div id={id} className="flex pl-[0.2em] flex-wrap md:flex-nowrap">
               <a href={href} target="_blank" rel="noopener noreferrer">
                 <img src={src} alt="logo" />
               </a>
@@ -53,8 +53,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-[95%] flex-wrap-reverse flex justify-around mt-[3em] md:flex-nowrap">
-        <div>
-          <h1>Reach Us</h1>
+        <div className="flex flex-col items-center justify-center">
+          <h1 className="pt-5 font-mono text-2xl">Reach Us</h1>
           <span className="flex gap-4 p-1">
             <img className="w-[24px] h-[24px]" src={phone} alt="" />
             <p>+92 3044202755</p>
@@ -69,21 +69,27 @@ const Footer = () => {
           </span>
         </div>
         <div>
-          <h2>Quick Links</h2>
+          <h2 className="font-mono text-2xl ">Quick Links</h2>
           <p>Contact Us</p>
           <p>Payment Shipping</p>
           <p>FAQs</p>
           <p>Tracking Orders</p>
         </div>
-        <div className="w-[25em] h-[10em] bg-white">
-          <span className="flex">
-            <h1>Join Our</h1>
-            <h1 className="font-extrabold text-red-500 ">NewsLetter</h1>
-          </span>
-          <form action="POST" className="flex">
-            <input type="text" placeholder="Enter Your Email" />
-            <button className="bg-black color-white">Subscribe</button>
-          </form>
+        <div className="sm:w-[100vw] md:w-[20em] h-[10vh] bg-white mx-0 my-auto mt-5 mb-5">
+          <div className="md:pl-[2.5em] pt-[0.3em] pr-2">
+            <span className="flex">
+              <h1 className="text-2xl">Join Our</h1>
+              <h1 className="px-3 text-2xl font-extrabold text-red-500 ">
+                NewsLetter
+              </h1>
+            </span>
+            <form action="POST" className="flex">
+              <input type="text" placeholder="Enter Your Email" />
+              <button className="text-white bg-black hover:bg-white hover:text-black hover:text-xl">
+                Subscribe
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

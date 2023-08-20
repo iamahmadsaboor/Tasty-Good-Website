@@ -8,21 +8,23 @@ const Membership = () => {
       <div className="w-full h-auto">
         <img src={memberbg} alt="" className="w-full h-auto" />
       </div>
-      <div className="absolute top-0 mt-16 ml-4 membertext sm:mt-32 md:mt-[9em] sm:ml-8 md:ml-16">
-        <h4 className="text-2xl text-white sm:text-3xl md:text-4xl">Get Our</h4>
-        <h1 className="text-4xl text-white sm:text-5xl md:text-6xl">
+      <div className="absolute top-0 left-0 mt-8 ml-4 sm:ml-8 md:ml-16 md:mt-16 lg:mt-32">
+        <h4 className="text-xl text-white sm:text-2xl md:text-3xl lg:text-4xl">
+          Get Our
+        </h4>
+        <h1 className="text-3xl text-white sm:text-4xl md:text-5xl lg:text-6xl">
           Membership
         </h1>
-        <p className="text-lg text-white sm:text-xl md:text-2xl">
+        <p className="text-base text-white sm:text-lg md:text-xl lg:text-2xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, sed.
         </p>
-        <button className="px-4 py-2 font-semibold text-blue-700 bg-transparent border border-blue-500 rounded-full hover:bg-blue-500 hover:text-white hover:border-transparent">
+        <button className="px-4 py-2 mt-4 text-white bg-blue-500 border border-blue-500 rounded-full hover:bg-blue-700">
           Book Now
         </button>
       </div>
-      <div className="absolute top-0 mt-12 ml-12 membercards sm:mt-24 md:mt-[5em] sm:ml-32 md:ml-[60em]">
+      <div className="absolute top-0 right-0 mt-8 mr-8 sm:mt-16 sm:mr-16 md:mt-24 md:mr-24 lg:mt-32 lg:mr-32">
         <img
-          className="h-[21em] w-[30em] sm:h-[28em] sm:w-[40em] md:h-[18em] md:w-[26em]"
+          className="w-64 h-auto sm:w-80 sm:h-auto md:w-96 md:h-auto lg:w-96 lg:h-auto"
           src={membercard}
           alt=""
         />

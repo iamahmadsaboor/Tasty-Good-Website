@@ -14,12 +14,12 @@ const Main = () => {
   return (
     <div>
       <div style={mainStyle}>
-        <div className="absolute right-[1em] top-[9em] md:top-[10em] md:right-[14em] lg:right-[29em]">
+        <div className="absolute right-[1em] top-[9em] md:top-[10em] md:right-[14em] lg:right-[29em] mainText">
           <p className="text-white font-Anton">Try Out Our New Meal</p>
-          <h2 className="text-red-700 text-4xl font-a">DOUBLE</h2>
-          <h2 className="text-yellow-800 text-4xl border-l-amber-400">NUKE</h2>
-          <h2 className="text-white text-4xl font-Anton">BURGER</h2>
-          <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500  hover:border-transparent rounded-full">
+          <h2 className="text-4xl text-red-700 font-a">DOUBLE</h2>
+          <h2 className="text-4xl text-yellow-800 border-l-amber-400">NUKE</h2>
+          <h2 className="text-4xl text-white font-Anton">BURGER</h2>
+          <button className="px-4 py-2 font-semibold text-blue-700 bg-transparent border border-blue-500 rounded-full hover:bg-blue-500 hover:text-white hover:border-transparent">
             Order Now
           </button>
         </div>

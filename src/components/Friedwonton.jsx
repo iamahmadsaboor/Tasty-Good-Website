@@ -9,15 +9,14 @@ const Friedwonton = () => {
   };
   return (
     <div>
-      <div style={backgroundStyle}></div>
-      <div className="absolute left-8 top-[150em] md:top-[110em] pl-[2em] lg:top-[90em] xl:top-[72em]">
-        <h3 className="text-xl md:text-6xl text-white ">Get Free</h3>
-        <h1 className="text-xl md:text-5xl text-white ">Fried</h1>
-        <h1 className="text-xl md:text-4xl text-white ">Wonton</h1>
-        <h4 className="text-xl md:text-l text-white ">
-          For every purchase <b>NUKE BURGERS</b> Variants
+      <div style={backgroundStyle} className="relative"></div>
+      <div className="absolute left-8 top-[160em] md:top-[120em] pl-[2em] lg:top-[90em] xl:top-[72em] mainText">
+        <h3 className="text-xl text-white md:text-6xl ">Get Free</h3>
+        <h1 className="text-xl text-white md:text-5xl ">Fried Wonton</h1>
+        <h4 className="font-mono text-xl text-white md:text-l">
+          For every purchase NUKE BURGERS Variants
         </h4>
-        <button className="bg-orange-500 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500  hover:border-transparent rounded-full ">
+        <button className="px-4 py-2 bg-orange-500 border border-blue-500 rounded-full text-black-700 hover:bg-blue-500 hover:text-white hover:border-transparent ">
           Learn More
         </button>
       </div>

@@ -8,18 +8,14 @@ const Reservation = () => {
     backgroundPosition: "center",
     height: "95vh",
   };
-  const font = {
-    fontFamily: "a",
-  };
+
   return (
     <div>
       <div style={backgroundStyle}></div>
-      <div className="absolute md:top-[110em] right-[11em] font-a">
-        <h4 className="text-2xl text-white" style={font}>
-          Get Your
-        </h4>
-        <h1 className="text-2xl text-white">Reservations</h1>
-        <button className="px-4 py-2 font-semibold text-blue-700 bg-transparent border border-blue-500 rounded-full hover:bg-blue-500 hover:text-white hover:border-transparent ">
+      <div className="absolute md:top-[150em] lg:top-[110em] right-[11em] mainText">
+        <h1 className="text-4xl text-white mainText">Get Your</h1>
+        <h1 className="text-4xl text-white mainText">Reservations</h1>
+        <button className="px-4 py-2 text-blue-700 bg-transparent border border-blue-500 rounded-full hover:bg-blue-500 hover:text-white hover:border-transparent ">
           Book Now
         </button>
       </div>
