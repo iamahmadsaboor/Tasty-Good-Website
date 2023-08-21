@@ -85,7 +85,7 @@ const Footer = () => {
             </span>
             <form action="POST" className="flex">
               <input type="text" placeholder="Enter Your Email" />
-              <button className="text-white bg-black hover:bg-white hover:text-black hover:text-xl">
+              <button className="text-white bg-black hover:bg-green-300 hover:text-black hover:text-xl">
                 Subscribe
               </button>
             </form>
