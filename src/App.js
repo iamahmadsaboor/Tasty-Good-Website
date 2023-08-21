@@ -8,9 +8,7 @@ import Reservation from "./components/Reservation";
 import Location from "./components/Location";
 import Footer from "./components/Footer";
 function App() {
-  // {
-  //   alert("The Website is Under Construction!!! Feedback Will Be Appreciated");
-  // }
+
   return (
     <div>
       <Navbar />
