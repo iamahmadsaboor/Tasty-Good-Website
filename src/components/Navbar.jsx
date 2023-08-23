@@ -44,7 +44,7 @@ const Navbar = () => {
       <div>
         <img src={logo} alt="Logo" className="w-[6em] h-[2em]" />
       </div>
-      <div className="hidden md:flex gap-6">
+      <div className="hidden gap-6 md:flex">
         <ul className="flex gap-6">
           {navLinks.map(({ id, link, style }) => (
             <li key={id} className="cursor-pointer">

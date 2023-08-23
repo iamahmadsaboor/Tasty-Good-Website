@@ -40,14 +40,14 @@ const Meals = () => {
   ];
 
   return (
-    <div className="m-3 p-2 ">
-      <h2 className="flex justify-center text-center text-red-600 text-2xl m-3  ">
+    <div className="p-2 m-3 " id="Menu">
+      <h2 className="flex justify-center m-3 text-4xl font-bold text-center text-red-600 ">
         Our top five meals
       </h2>
-      <p className="flex justify-center text-center m-3">
+      <p className="flex justify-center m-3 text-center">
         Try our five best meals today.
       </p>
-      <div className="flex justify-center gap-6 flex-wrap ">
+      <div className="flex flex-wrap justify-center gap-6 ">
         {meals.map(({ id, title, src, price }) => (
           <div
             key={id}
@@ -61,7 +61,7 @@ const Meals = () => {
               </div>
               <div class="mb-2 flex justify-between items-center	 ">
                 <h4>{price}</h4>
-                <button className="bg-orange-500 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500  hover:border-transparent rounded-full ">
+                <button className="px-4 py-2 font-mono font-semibold text-white border border-black rounded-full bg-slate-600 hover:bg-orange-500 hover:text-black hover:border-transparent ">
                   Order Now
                 </button>
               </div>

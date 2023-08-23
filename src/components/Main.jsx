@@ -19,7 +19,7 @@ const Main = () => {
           <h2 className="text-4xl text-red-700 font-a">DOUBLE</h2>
           <h2 className="text-4xl text-yellow-800 border-l-amber-400">NUKE</h2>
           <h2 className="text-4xl text-white font-Anton">BURGER</h2>
-          <button className="px-4 py-2 font-semibold text-blue-700 bg-transparent border border-blue-500 rounded-full hover:bg-blue-500 hover:text-white hover:border-transparent">
+          <button className="px-4 py-2 mt-2 font-serif text-white bg-transparent border border-black rounded-full hover:bg-orange-500 hover:text-white hover:border-transparent">
             Order Now
           </button>
         </div>

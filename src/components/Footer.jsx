@@ -39,7 +39,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="h-full bg-red-500 text-mono">
+    <div className="h-full bg-red-500 text-mono pb-[1em]">
       <div className="flex md:flex justify-around pt-[3em] flex-wrap md:flex-nowrap">
         <img className="h-[48px] w-[93px]" src={whitelogo} alt="" />
         <div className="flex pt-4 md:pt-0">
@@ -52,7 +52,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="w-[95%] flex-wrap-reverse flex justify-around mt-[3em] md:flex-nowrap">
+      <div className="w-[95%] flex-wrap-reverse flex justify-around mt-[1em] md:flex-nowrap">
         <div className="flex flex-col items-center justify-center">
           <h1 className="pt-5 font-mono text-2xl">Reach Us</h1>
           <span className="flex gap-4 p-1">

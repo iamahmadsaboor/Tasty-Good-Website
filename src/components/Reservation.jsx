@@ -11,11 +11,13 @@ const Reservation = () => {
 
   return (
     <div>
-      <div style={backgroundStyle}></div>
-      <div className="absolute md:top-[150em] lg:top-[110em] right-[11em] mainText">
-        <h1 className="text-4xl text-white mainText">Get Your</h1>
-        <h1 className="text-4xl text-white mainText">Reservations</h1>
-        <button className="px-4 py-2 text-blue-700 bg-transparent border border-blue-500 rounded-full hover:bg-blue-500 hover:text-white hover:border-transparent ">
+      <div style={backgroundStyle} className="relative"></div>
+      <div className="absolute top-[200em] right-0 md:top-[150em] lg:top-[128em] xl:top-[104em] md:right-[6em] mainText">
+        <h1 className="text-2xl text-white mainText">Get Your</h1>
+        <h1 className="md:text-[4em] text-[2em] text-white mainText">
+          Reservations
+        </h1>
+        <button className="px-4 py-2 font-mono font-semibold text-white bg-transparent border border-black rounded-full hover:bg-orange-500 hover:text-black hover:border-transparent">
           Book Now
         </button>
       </div>
