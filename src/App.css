@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 * {
   margin: 0px;
   padding: 0px;
@@ -10,6 +8,6 @@
 .mainText {
   font-family: "Anton";
 }
-.secondaryText{
+.secondaryText {
   font-size: 3rem;
 }
