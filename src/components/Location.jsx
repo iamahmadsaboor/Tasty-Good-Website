@@ -11,7 +11,7 @@ const Location = () => {
           Learn More
         </button>
       </div>
-      <div className="w-[40%] pt-[4em]  ">
+      <div className="w-[40%] pt-[4em] mb-[3em] ">
         <img src={map} alt="map" />
       </div>
     </div>

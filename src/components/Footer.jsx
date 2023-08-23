@@ -39,7 +39,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="bg-red-500 h-[95vh] md:h-[45vh] text-mono">
+    <div className="h-full bg-red-500 text-mono">
       <div className="flex md:flex justify-around pt-[3em] flex-wrap md:flex-nowrap">
         <img className="h-[48px] w-[93px]" src={whitelogo} alt="" />
         <div className="flex pt-4 md:pt-0">
