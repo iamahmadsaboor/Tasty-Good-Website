@@ -8,9 +8,9 @@ const Friedwonton = () => {
     height: "70vh",
   };
   return (
-    <div>
+    <div >
       <div style={backgroundStyle} className="relative"></div>
-      <div className="absolute left-8 top-[160em] md:top-[120em] pl-[2em] lg:top-[90em] xl:top-[72em] mainText">
+      <div className="absolute md:left-8 top-[142em] md:top-[120em] pl-[2em] lg:top-[85em] xl:top-[72em] mainText">
         <h3 className="text-xl text-white md:text-6xl ">Get Free</h3>
         <h1 className="text-xl text-white md:text-5xl ">Fried Wonton</h1>
         <h4 className="font-serif text-xl text-white md:text-l">

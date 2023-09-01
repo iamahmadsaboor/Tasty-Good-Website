@@ -51,9 +51,13 @@ const Meals = () => {
         {meals.map(({ id, title, src, price }) => (
           <div
             key={id}
-            class="max-w-[15rem] rounded overflow-hidden shadow-lg w-[292px] h-[350px] "
+            class="max-w-[15rem] rounded overflow-hidden shadow-lg w-[292px] h-[268px] hover:shadow-indigo-600 hover:shadow-md hover:duration-700"
           >
-            <img className="w-[292px] h-[140px]" src={src} alt="" />
+            <img
+              className="w-[292px] h-[140px] hover:scale-110 overflow-hidden hover:duration-500"
+              src={src}
+              alt=""
+            />
 
             <div class="px-4 py-4">
               <div class="font-bold text-[1rem] mb-2 flex justify-between">

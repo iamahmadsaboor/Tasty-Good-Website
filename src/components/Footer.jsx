@@ -39,7 +39,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="h-full bg-red-500 text-mono pb-[1em]">
+    <div className="h-full bg-red-500 text-mono pb-[1em]" id="About-Us">
       <div className="flex md:flex justify-around pt-[3em] flex-wrap md:flex-nowrap">
         <img className="h-[48px] w-[93px]" src={whitelogo} alt="" />
         <div className="flex pt-4 md:pt-0">
@@ -53,8 +53,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-[95%] flex-wrap-reverse flex justify-around mt-[1em] md:flex-nowrap">
-        <div className="flex flex-col items-center justify-center">
-          <h1 className="pt-5 font-mono text-2xl">Reach Us</h1>
+        <div className="flex flex-col items-center justify-center text-white">
+          <h1 className="pt-5 font-mono text-2xl font-bold">Reach Us</h1>
           <span className="flex gap-4 p-1">
             <img className="w-[24px] h-[24px]" src={phone} alt="" />
             <p>+92 3044202755</p>
@@ -68,14 +68,14 @@ const Footer = () => {
             <p>Faisalabad, Pakistan</p>
           </span>
         </div>
-        <div>
-          <h2 className="font-mono text-2xl ">Quick Links</h2>
+        <div className="text-white">
+          <h2 className="font-mono text-2xl font-bold md:pt-5">Quick Links</h2>
           <p>Contact Us</p>
           <p>Payment Shipping</p>
           <p>FAQs</p>
           <p>Tracking Orders</p>
         </div>
-        <div className="sm:w-[100vw] md:w-[20em] h-[10vh] bg-white mx-0 my-auto mt-5 mb-5">
+        <div className="sm:w-[100vw] md:w-[20em] h-[10vh] bg-white mx-0 my-auto mt-5 mb-5 ">
           <div className="md:pl-[2.5em] pt-[0.3em] pr-2">
             <span className="flex">
               <h1 className="text-2xl">Join Our</h1>

@@ -2,7 +2,10 @@ import React from "react";
 import map from "../Assets/map.png";
 const Location = () => {
   return (
-    <div className="flex flex-wrap items-center justify-around text-center md:flex-nowrap md:text-left">
+    <div
+      className="flex flex-wrap items-center justify-around text-center md:flex-nowrap md:text-left"
+      id="Blog"
+    >
       <div className="w-[100vw] pt-2 md:w-[30vw] md:pt-2  ">
         <h4 className="text-2xl text-black mainText">Our Resturant</h4>
         <h1 className="text-4xl text-red-600 mainText ">Locations</h1>

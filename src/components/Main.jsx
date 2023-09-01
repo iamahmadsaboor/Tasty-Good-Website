@@ -1,5 +1,4 @@
 import React from "react";
-
 import MainImg from "../Assets/mainbanner.png";
 
 const Main = () => {
