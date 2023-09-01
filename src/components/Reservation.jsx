@@ -12,7 +12,7 @@ const Reservation = () => {
   return (
     <div>
       <div style={backgroundStyle} className="relative"></div>
-      <div className="absolute top-[175em] right-0 md:top-[150em] lg:top-[120em] xl:top-[104em] md:right-[6em] mainText">
+      <div className="absolute top-[175em] right-0 md:top-[150em] lg:top-[120em] xl:top-[104em] 2xl:top-[105em] md:right-[6em] mainText">
         <h1 className="text-2xl text-white mainText">Get Your</h1>
         <h1 className="md:text-[4em] text-[2em] text-white mainText">
           Reservations

@@ -48,7 +48,15 @@ const Navbar = () => {
         <ul className="flex gap-6">
           {navLinks.map(({ id, link, style }) => (
             <li key={id} className="cursor-pointer">
-              <Link to={link} style={link === "Order Now" ? style : {}}>
+              <Link
+                to={link}
+                style={link === "Order Now" ? style : {}}
+                className={
+                  link === "Order Now"
+                    ? "hover:bg-gray-400 hover:text-white"
+                    : ""
+                }
+              >
                 {link}
               </Link>
             </li>
@@ -71,6 +79,11 @@ const Navbar = () => {
                   to={link}
                   onClick={toggleNav}
                   style={link === "Order Now" ? style : {}}
+                  className={
+                    link === "Order Now"
+                      ? "hover:bg-gray-400 hover:text-white"
+                      : ""
+                  }
                 >
                   {link}
                 </Link>
