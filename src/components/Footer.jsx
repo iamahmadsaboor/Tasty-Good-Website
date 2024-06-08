@@ -39,57 +39,58 @@ const Footer = () => {
   ];
 
   return (
-    <div className="h-full bg-red-500 text-mono pb-[1em]" id="About-Us">
-      <div className="flex md:flex justify-around pt-[3em] flex-wrap md:flex-nowrap">
-        <img className="h-[48px] w-[93px]" src={whitelogo} alt="" />
-        <div className="flex pt-4 md:pt-0">
+    <div className="bg-red-500 text-white py-8" id="About-Us">
+      <div className="container mx-auto px-4 flex flex-col items-center md:flex-row md:justify-between">
+        <img
+          className="h-[48px] w-[93px] mb-4 md:mb-0"
+          src={whitelogo}
+          alt="White Logo"
+        />
+        <div className="flex space-x-4">
           {icons.map(({ id, src, href }) => (
-            <div id={id} className="flex pl-[0.2em] flex-wrap md:flex-nowrap">
-              <a href={href} target="_blank" rel="noopener noreferrer">
-                <img src={src} alt="logo" />
-              </a>
-            </div>
+            <a key={id} href={href} target="_blank" rel="noopener noreferrer">
+              <img className="h-6 w-6" src={src} alt="social media icon" />
+            </a>
           ))}
         </div>
       </div>
-      <div className="w-[95%] flex-wrap-reverse flex justify-around mt-[1em] md:flex-nowrap">
-        <div className="flex flex-col items-center justify-center text-white">
-          <h1 className="pt-5 font-mono text-2xl font-bold">Reach Us</h1>
-          <span className="flex gap-4 p-1">
-            <img className="w-[24px] h-[24px]" src={phone} alt="" />
+      <div className="container mx-auto px-4 mt-8 flex flex-col md:flex-row md:justify-between md:space-x-8">
+        <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
+          <h1 className="text-2xl font-bold">Reach Us</h1>
+          <div className="flex items-center mt-4 space-x-2">
+            <img className="w-6 h-6" src={phone} alt="phone icon" />
             <p>+92 3044202755</p>
-          </span>
-          <span className="flex gap-4 p-1">
-            <img className="w-[24px] h-[24px]" src={email} alt="" />
-            <p>iamahmadsaboor@gmail.com</p>
-          </span>
-          <span className="flex gap-4 p-1">
-            <img className="w-[24px] h-[24px]" src={location} alt="" />
-            <p>Faisalabad, Pakistan</p>
-          </span>
-        </div>
-        <div className="text-white">
-          <h2 className="font-mono text-2xl font-bold md:pt-5">Quick Links</h2>
-          <p>Contact Us</p>
-          <p>Payment Shipping</p>
-          <p>FAQs</p>
-          <p>Tracking Orders</p>
-        </div>
-        <div className="sm:w-[100vw] md:w-[20em] h-[10vh] bg-white mx-0 my-auto mt-5 mb-5 ">
-          <div className="md:pl-[2.5em] pt-[0.3em] pr-2">
-            <span className="flex">
-              <h1 className="text-2xl">Join Our</h1>
-              <h1 className="px-3 text-2xl font-extrabold text-red-500 ">
-                NewsLetter
-              </h1>
-            </span>
-            <form action="POST" className="flex">
-              <input type="text" placeholder="Enter Your Email" />
-              <button className="text-white bg-black hover:bg-green-300 hover:text-black hover:text-xl">
-                Subscribe
-              </button>
-            </form>
           </div>
+          <div className="flex items-center mt-2 space-x-2">
+            <img className="w-6 h-6" src={email} alt="email icon" />
+            <p>iamahmadsaboor@gmail.com</p>
+          </div>
+          <div className="flex items-center mt-2 space-x-2">
+            <img className="w-6 h-6" src={location} alt="location icon" />
+            <p>Faisalabad, Pakistan</p>
+          </div>
+        </div>
+        <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
+          <h2 className="text-2xl font-bold">Quick Links</h2>
+          <p className="mt-2">Contact Us</p>
+          <p className="mt-2">Payment Shipping</p>
+          <p className="mt-2">FAQs</p>
+          <p className="mt-2">Tracking Orders</p>
+        </div>
+        <div className="bg-white text-black w-full md:w-auto p-4 rounded-md">
+          <h1 className="text-2xl font-bold text-center md:text-left">
+            Join Our <span className="text-red-500">Newsletter</span>
+          </h1>
+          <form className="mt-4 flex flex-col md:flex-row">
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              className="p-2 flex-1 mb-4 md:mb-0 md:mr-2 border border-gray-300 rounded-md"
+            />
+            <button className="p-2 bg-black text-white rounded-md hover:bg-green-300 hover:text-black">
+              Subscribe
+            </button>
+          </form>
         </div>
       </div>
     </div>
