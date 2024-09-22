@@ -4,95 +4,57 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../Assets/TASTY GOOD-5.png";
 
 const Navbar = () => {
-  let navLinks = [
-    {
-      id: 1,
-      link: "Home",
-    },
-    {
-      id: 2,
-      link: "Menu",
-    },
-    {
-      id: 3,
-      link: "Blog",
-    },
-    {
-      id: 4,
-      link: "About-Us",
-    },
+  const navLinks = [
+    { id: 1, link: "Home" },
+    { id: 2, link: "Menu" },
+    { id: 3, link: "Blog" },
+    { id: 4, link: "About-Us" },
     {
       id: 5,
       link: "Order Now",
-      style: {
-        background: "#F03153",
-        color: "white",
-        padding: "10px",
-        borderRadius: "1.2em",
-      },
+      style: "bg-red-500 text-white rounded-full px-4 py-2",
     },
   ];
 
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  const toggleNav = () => {
-    setIsNavOpen(!isNavOpen);
-  };
-
   return (
-    <div className="flex justify-around items-center p-[1em]">
-      <div>
-        <img src={logo} alt="Logo" className="w-[6em] h-[2em]" />
-      </div>
-      <div className="hidden gap-6 md:flex">
-        <ul className="flex gap-6">
-          {navLinks.map(({ id, link, style }) => (
-            <li key={id} className="cursor-pointer">
-              <Link
-                to={link}
-                style={link === "Order Now" ? style : {}}
-                className={
-                  link === "Order Now"
-                    ? "hover:bg-gray-400 hover:text-white"
-                    : ""
-                }
-              >
-                {link}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className="md:hidden">
+    <nav className="flex justify-between items-center w-full px-4 py-2 bg-white shadow-md fixed top-0 z-50">
+      {/* Logo */}
+      <img src={logo} alt="Logo" className="w-24 h-auto" />
+
+      {/* Mobile Menu Icon */}
+      <div className="md:hidden z-30" onClick={() => setIsNavOpen(!isNavOpen)}>
         {isNavOpen ? (
-          <FaTimes onClick={toggleNav} className="text-2xl cursor-pointer" />
+          <FaTimes className="text-2xl text-black" />
         ) : (
-          <FaBars onClick={toggleNav} className="text-2xl cursor-pointer" />
+          <FaBars className="text-2xl text-black" />
         )}
       </div>
-      {isNavOpen && (
-        <div className="font-a md:hidden absolute top-[3.5em] right-0 bg-white w-full text-center cursor-pointer z-10">
-          <ul className="py-4">
-            {navLinks.map(({ id, link, style }) => (
-              <li key={id} className="py-2">
-                <Link
-                  to={link}
-                  onClick={toggleNav}
-                  style={link === "Order Now" ? style : {}}
-                  className={
-                    link === "Order Now"
-                      ? "hover:bg-gray-400 hover:text-white"
-                      : ""
-                  }
-                >
-                  {link}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-    </div>
+
+      {/* Navigation Links */}
+      <ul
+        className={`flex flex-col md:flex-row md:static absolute top-0 left-0 w-full h-screen md:h-auto md:w-auto bg-white md:bg-transparent justify-center md:justify-end items-center transition-transform duration-500 ease-in-out ${
+          isNavOpen ? "translate-x-0" : "-translate-x-full"
+        } md:translate-x-0`}
+      >
+        {navLinks.map(({ id, link, style }) => (
+          <li key={id} className="my-6 md:my-0 md:ml-6">
+            <Link
+              to={link}
+              className={`text-lg md:text-base hover:text-red-600 ${
+                style || ""
+              }`}
+              onClick={() => setIsNavOpen(false)} // Close the menu on link click
+              smooth={true}
+              duration={500}
+            >
+              {link}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 };
 
